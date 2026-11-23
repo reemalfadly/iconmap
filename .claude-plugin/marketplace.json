@@ -3,6 +3,6 @@
   "owner": { "name": "iconReem" },
   "metadata": { "description": "iconMap: map-explainer videos with Arabic right-to-left text" },
   "plugins": [
-    { "name": "iconmap", "source": "./", "description": "iconMap by iconReem: 4-question interview, Globe engine on real NASA satellite imagery, flat engine, free Arabic voices, sourced scripts and a final check.", "version": "1.2.0" }
+    { "name": "iconmap", "source": "./", "description": "iconMap by iconReem: 4-question interview, Globe engine on real NASA satellite imagery, flat engine, free Arabic voices, sourced scripts and a final check.", "version": "1.2.1" }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "iconmap",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "iconMap by iconReem: map-explainer videos with Arabic right-to-left text. A 4-question interview, then two engines (a GPU globe on real NASA satellite imagery, and a flexible flat map with tilt/orbit camera and rivers), free Arabic voices, a sourced-script helper and a final check.",
   "author": { "name": "iconReem" },
   "keywords": ["maps", "video", "arabic", "rtl", "satellite", "shorts"]
