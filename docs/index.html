@@ -123,6 +123,7 @@ th{background:rgba(255,255,255,.07);color:var(--or2)}tr:last-child td{border:0}
 .it{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px 22px;min-width:0}
 .it h3{margin:0 0 4px;font-size:19px}.it p{margin:0 0 8px;color:var(--mut);font-size:15.5px}
 .code{position:relative;margin:10px 0;padding-top:34px}
+pre.rtl{direction:rtl;text-align:right;white-space:pre-wrap}
 pre{margin:0;padding:14px 16px;direction:ltr;text-align:left;background:#050813;border:1px solid var(--line);border-radius:12px;overflow-x:auto;font:14.5px/1.65 ui-monospace,Consolas,monospace;color:#e6efff}
 .copy{position:absolute;top:0;right:0;left:auto;background:var(--card2);border:1px solid var(--line);color:var(--tx);border-radius:8px;padding:3px 12px;font:inherit;font-size:13px;cursor:pointer}
 .say{display:block;margin-top:6px;color:var(--cy);font-size:15px}
@@ -131,6 +132,7 @@ summary{cursor:pointer;padding:12px 0;font-weight:700}
 details p{margin:0 0 14px;color:var(--mut)}
 footer{padding:36px 0 60px;color:var(--mut);font-size:14.5px;border-top:1px solid var(--line)}
 footer a{color:var(--or2)}
+footer.ft{text-align:center}footer.ft a{font-weight:700;font-size:20px;letter-spacing:.5px;text-decoration:none;background:linear-gradient(90deg,var(--or),var(--mg));-webkit-background-clip:text;background-clip:text;color:transparent}
 
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
 .rv.in{opacity:1;transform:none}
@@ -236,8 +238,16 @@ html{overflow-x:clip}
 
 <section id="install" class="band"><div class="wrap">
   <h2 class="rv"><span class="ar">التنزيل والاستخدام</span><span class="en">Download and use</span></h2>
-  <p class="lead rv"><span class="ar">أربع خطوات. تحتاج Claude Code فقط، وسكربت التجهيز يثبّت Node وffmpeg وPython إن لزم.</span><span class="en">Four steps. You only need Claude Code; the setup script installs Node, ffmpeg and Python if needed.</span></p>
+  <p class="lead rv"><span class="ar">لا تحتاج أن تعرف الكود. أعطِ الرابط لكلود كود، أو ثبّتها بنفسك بأربع خطوات.</span><span class="en">You do not need to know code. Give the link to Claude Code, or install it yourself in four steps.</span></p>
   <div class="inst">
+    <div class="it easy rv"><h3>⚡ <span class="ar">لا تعرف الكود؟ هذه أسهل طريقة</span><span class="en">Do not code? This is the easy way</span></h3>
+      <p><span class="ar">خذ هذا الرابط وأعطه لكلود كود مع هذه الجملة:</span><span class="en">Take this link and give it to Claude Code with this sentence:</span></p>
+      <div class="code ar"><button class="copy" data-c="ثبّت مهارة iconMap من هذا الرابط، وجهّز كل ما تحتاجه، وشغّلها: https://github.com/reemalfadly/iconmap">copy</button><pre class="rtl">ثبّت مهارة iconMap من هذا الرابط، وجهّز كل ما تحتاجه، وشغّلها:
+https://github.com/reemalfadly/iconmap</pre></div>
+      <div class="code en"><button class="copy" data-c="Install the iconMap skill from this link, set up everything it needs, and run it: https://github.com/reemalfadly/iconmap">copy</button><pre>Install the iconMap skill from this link, set up everything it needs, and run it:
+https://github.com/reemalfadly/iconmap</pre></div>
+      <span class="say"><span class="ar">كلود كود يثبّتها ويجهّز كل شيء بنفسه (وافق على الأوامر إن سألك). وحين يخبرك أنه انتهى، أغلق كلود كود وافتحه من جديد واكتب <code>/iconmap</code>.</span><span class="en">Claude Code installs it and sets everything up (approve the commands if it asks). When it says it is done, close Claude Code, open it again and type <code>/iconmap</code>.</span></span></div>
+    <div class="it rv"><h3><span class="ar">أو ثبّتها بنفسك</span><span class="en">Or install it yourself</span></h3><p><span class="ar">الخطوات الأربع التالية للمهتمين.</span><span class="en">The four steps below are for those who want to.</span></p></div>
     <div class="it rv"><h3><span class="ar">1) ثبّت البلقن</span><span class="en">1) Install the plugin</span></h3><p><span class="ar">داخل Claude Code الصق السطرين:</span><span class="en">Inside Claude Code paste these two lines:</span></p>
       <div class="code"><button class="copy" data-c="/plugin marketplace add reemalfadly/iconmap&#10;/plugin install iconmap@iconmap">copy</button><pre>/plugin marketplace add reemalfadly/iconmap
 /plugin install iconmap@iconmap</pre></div>
@@ -287,11 +297,7 @@ bash setup.sh</pre></div></div>
   <details><summary><span class="ar">ما الحقوق التي ألتزم بها؟</span><span class="en">What credit do I need?</span></summary><p><span class="ar">فيديوهات الكرة تحتاج سطر شكر لـNASA GIBS في الوصف (يطبعه البناء). الحدود والأنهار من Natural Earth (ملك عام). والبلقن مجاني للاستخدام حتى التجاري، ويُمنع بيعه أو إعادة نشره.</span><span class="en">Globe videos need the NASA GIBS acknowledgement line in the description (the build prints it). Borders and rivers come from Natural Earth (public domain). The plugin is free to use, including commercially; selling or republishing it is not allowed.</span></p></details>
 </div></section>
 
-<div class="wrap"><footer>
-  <span class="ar">iconMap من iconReem. صور الأقمار: NASA Blue Marble عبر NASA GIBS. الحدود والأنهار: Natural Earth. الخط: IBM Plex Sans Arabic (OFL). التراخيص في مجلد <code>rights/</code> وملف <code>LICENSE</code>.</span>
-  <span class="en">iconMap by iconReem. Imagery: NASA Blue Marble via NASA GIBS. Borders and rivers: Natural Earth. Font: IBM Plex Sans Arabic (OFL). Licences in <code>rights/</code> and <code>LICENSE</code>.</span>
-  <div style="margin-top:8px"><a href="https://github.com/reemalfadly/iconmap" rel="noopener">GitHub</a></div>
-</footer></div>
+<div class="wrap"><footer class="ft"><a href="https://iconreem.com" rel="noopener">iconreem</a></footer></div>
 
 <script>
 const root=document.documentElement,btn=document.getElementById('lang');
