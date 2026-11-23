@@ -1,8 +1,13 @@
 # iconMap
 
-Make map-explainer videos with Arabic right-to-left text, from a short chat. iconMap greets you, asks four quick questions, and builds the whole video: a sourced script, a voice, the map, captions timed word by word, and sound effects.
+Make map-explainer videos with Arabic right-to-left text, from a short chat. iconMap greets you, asks five quick questions, and builds the whole video: a sourced script, a voice, the map, captions timed word by word, and sound effects.
 
 **iconMap بلقن لكلود كود**: يسوي فيديوهات خرائط متحركة بالعربي. يرحّب فيك ويسألك 5 أسئلة سريعة (نوع الفيديو، فكرة من 5 يقترحها، طولي أو عرضي، الجمهور، الصوت) وبعدها يسوي الفيديو كامل.
+
+## Proof: a video made with it
+[![iconMap demo: China and USA](docs/media/china-usa-poster.jpg)](https://reemalfadly.github.io/iconmap/#proof)
+
+A 33-second China vs USA comparison built with the five questions. Every number was read from an official page, listed with its quote in [`docs/media/china-usa-sources.md`](docs/media/china-usa-sources.md). Watch it on the [project page](https://reemalfadly.github.io/iconmap/#proof) or open [`docs/media/china-usa.mp4`](docs/media/china-usa.mp4). Voice generated with elevenlabs.io (free plan); imagery NASA Blue Marble via NASA GIBS; borders Natural Earth.
 
 ## What it makes
 - **3D globe on real NASA satellite imagery** that dives from space to the place (vertical 1080x1920, 60 fps).
