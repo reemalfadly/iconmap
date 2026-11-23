@@ -1,0 +1,11 @@
+node_modules/
+globe/cache/
+__pycache__/
+*.pyc
+frames/
+result/
+check/
+*.silent.mp4
+test-render.mp4
+.DS_Store
+Thumbs.db

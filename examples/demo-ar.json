@@ -1,0 +1,43 @@
+{
+  "title": "iconMap demo (Arabic / RTL): Kuwait",
+  "lang": "ar",
+  "handle": "@iconReem",
+  "width": 1080, "height": 1920, "fps": 30,
+  "projection": "equirect",
+  "basemap": { "style": "satellite" },
+  "shots": [
+    { "start": 0, "end": 3.4, "fadeIn": 0.4,
+      "cam": { "from": { "lon": 40, "lat": 28, "span": 70 }, "to": { "lon": 47.6, "lat": 29.6, "span": 22 } },
+      "elements": [
+        { "type": "title", "text": "أين تقع الكويت؟", "t0": 0.2, "y": 700, "weight": 700, "serif": false },
+        { "type": "caption", "text": "دولة صغيرة، لكن موقعها *مهم*", "t0": 0.3 },
+        { "type": "dot", "lon": 47.98, "lat": 29.37, "color": "yellow", "ping": true, "t0": 1.4 }
+      ] },
+    { "start": 3.4, "end": 7.6,
+      "cam": { "from": { "lon": 47.6, "lat": 29.6, "span": 14 }, "to": { "lon": 47.6, "lat": 29.3, "span": 8 } },
+      "elements": [
+        { "type": "region", "set": "countries", "names": ["السعودية", "العراق"], "style": "tint", "t0": 0.1, "label": true },
+        { "type": "region", "set": "countries", "names": ["الكويت"], "style": "solid", "fill": "orange", "t0": 0.5, "label": true, "labelPill": true, "labelDy": 75 },
+        { "type": "pin", "lon": 47.98, "lat": 29.37, "label": "مدينة الكويت", "color": "red", "t0": 1.2 },
+        { "type": "timeTag", "lon": 46.2, "lat": 28.2, "text": "UTC+3", "t0": 1.8 },
+        { "type": "number", "x": 540, "y": 520, "text": "17,818 كم²", "size": 74, "t0": 2.2 },
+        { "type": "caption", "text": "بين *العراق* و*السعودية*", "t0": 0.2 }
+      ] },
+    { "start": 7.6, "end": 11.6, "bg": "blueprint", "fadeOut": 0.5,
+      "elements": [
+        { "type": "box", "x": 540, "y": 330, "w": 460, "text": "دولة الكويت", "fill": "#15418a", "size": 38, "t0": 0.1 },
+        { "type": "line", "points": [[540, 375], [540, 430], [830, 430], [830, 480]], "t0": 0.4 },
+        { "type": "line", "points": [[540, 430], [540, 480]], "t0": 0.4 },
+        { "type": "line", "points": [[540, 430], [250, 430], [250, 480]], "t0": 0.4 },
+        { "type": "box", "x": 830, "y": 530, "w": 270, "text": "العاصمة", "size": 32, "t0": 0.6 },
+        { "type": "box", "x": 540, "y": 530, "w": 270, "text": "حولي", "size": 32, "t0": 0.7 },
+        { "type": "box", "x": 250, "y": 530, "w": 270, "text": "الفروانية", "size": 32, "t0": 0.8 },
+        { "type": "box", "x": 830, "y": 680, "w": 270, "text": "مبارك الكبير", "size": 32, "t0": 0.9 },
+        { "type": "box", "x": 540, "y": 680, "w": 270, "text": "الأحمدي", "size": 32, "t0": 1.0 },
+        { "type": "box", "x": 250, "y": 680, "w": 270, "text": "الجهراء", "size": 32, "t0": 1.1 },
+        { "type": "number", "x": 540, "y": 960, "text": "6 محافظات", "size": 90, "t0": 1.5 },
+        { "type": "tag", "text": "الكويت", "y": 140, "t0": 0.2 },
+        { "type": "caption", "text": "ست محافظات، وبلد واحد", "y": 1500, "t0": 0.4 }
+      ] }
+  ]
+}

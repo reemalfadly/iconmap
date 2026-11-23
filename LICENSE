@@ -1,0 +1,30 @@
+iconMap Free-Use Licence (no resale)
+
+Copyright (c) 2026 iconReem. All rights reserved except as granted below.
+
+You MAY, free of charge:
+  1. Install and use iconMap on your own computers.
+  2. Make videos with it, for any purpose, including commercial ones (ads, client work, monetised channels).
+     Videos you make belong to you.
+  3. Modify your own copy for your own use.
+  4. Share links to the official repository, and quote or screenshot it with credit to iconReem.
+
+You MAY NOT, without iconReem's prior written permission:
+  1. Sell, rent, sublicense or charge for iconMap, or any copy or modified version of it.
+  2. Redistribute or re-upload iconMap, or a modified version of it, as your own package, repository, course
+     material, template pack or product (including bundling it inside a paid product).
+  3. Remove or change the iconReem name, this licence, or the notices in the rights/ folder.
+  4. Present iconMap as your own work, or imply that iconReem endorses you or your product.
+
+"iconMap" means the skills, engines, scripts, scene formats, Arabic place-name table, examples and documentation in
+this repository, and the name iconMap. A fork kept on GitHub only to propose changes back to the official repository
+is allowed.
+
+Third-party components keep their own licences and are not covered by the restrictions above: fonts (SIL Open Font
+License 1.1), Natural Earth data (public domain), world-atlas / us-atlas / topojson-client (ISC), NASA imagery fetched
+at build time (needs the acknowledgement line the build prints), and the tools you install yourself (Playwright,
+Chromium, ffmpeg, edge-tts, faster-whisper, ElevenLabs service under your own account). See
+rights/OWNERSHIP_AND_RIGHTS.txt and globe/rights/THIRD_PARTY.md.
+
+The software is provided "as is", without warranty of any kind. iconReem is not liable for any damages arising from
+its use.

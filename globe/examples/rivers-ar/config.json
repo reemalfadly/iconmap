@@ -1,0 +1,1 @@
+{ "name": "iconmap-globe-rivers-demo", "lang": "ar", "engine": "edge", "voice": "ar-SA-HamedNeural", "rate": "+15%", "maxGap": 0.16, "lead": 0.12, "fps": 120, "lufs": -14, "true_peak": -1.5, "look": "atlas" }
