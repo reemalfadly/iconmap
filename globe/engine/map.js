@@ -160,7 +160,7 @@ const MASK = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, MASK);
 for (const [k, v] of [[gl.TEXTURE_MIN_FILTER, gl.LINEAR], [gl.TEXTURE_MAG_FILTER, gl.LINEAR], [gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE], [gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE]]) gl.texParameteri(gl.TEXTURE_2D, k, v);
 function landMask() {   // white land on black, quarter resolution, same projection
   MX.setTransform(1, 0, 0, 1, 0, 0); MX.fillStyle = '#000'; MX.fillRect(0, 0, MK.width, MK.height); MX.setTransform(.25, 0, 0, .25, 0, 0); MX.fillStyle = '#fff';
-  const lon = C.l0 / D2R, lat = C.p0 / D2R, hx = Math.min(W / C.k, 3.2) / D2R / Math.max(.15, C.cp), hy = Math.min(H / C.k * 1.2, 3.2) / D2R;
+  const lon = ((C.l0 / D2R + 180) % 360 + 360) % 360 - 180, lat = C.p0 / D2R, hx = Math.min(W / C.k, 3.2) / D2R / Math.max(.15, C.cp), hy = Math.min(H / C.k * 1.2, 3.2) / D2R;   // lon wrapped to -180..180 (a camera that swung past the date line kept 262 and culled the USA)
   for (const c of WORLD.countries) {
     if (C.span < 60 && (c.bb[2] < lon - hx || c.bb[0] > lon + hx || c.bb[3] < lat - hy || c.bb[1] > lat + hy)) continue;
     MX.fill(countryPath([c], 4).p, 'nonzero');
@@ -210,7 +210,7 @@ function pill(x, y, s, bg, fg = '#fff', px = 46, a = 1, sc = 1) {
 // country rings -> one Path2D in screen space for this frame (points closer than 1.2 px are skipped)
 function countryPath(cs, step = 1.2) {
   const p = new Path2D(); let n = 0, x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9, len = 0;
-  const vis = [C.l0 / D2R, C.p0 / D2R], hx = Math.min(W / C.k, 3.2) / D2R / Math.max(.15, C.cp), hy = Math.min(H / C.k * 1.2, 3.2) / D2R;
+  const vis = [((C.l0 / D2R + 180) % 360 + 360) % 360 - 180, C.p0 / D2R], hx = Math.min(W / C.k, 3.2) / D2R / Math.max(.15, C.cp), hy = Math.min(H / C.k * 1.2, 3.2) / D2R;
   for (const c of cs) for (const r of c.r) {
     let rx0 = 1e9, rx1 = -1e9, ry0 = 1e9, ry1 = -1e9;
     for (let i = 0; i < r.length; i += 2) { const a = r[i] / 1e4, b = r[i + 1] / 1e4; if (a < rx0) rx0 = a; if (a > rx1) rx1 = a; if (b < ry0) ry0 = b; if (b > ry1) ry1 = b; }

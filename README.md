@@ -2,7 +2,7 @@
 
 Make map-explainer videos with Arabic right-to-left text, from a short chat. iconMap greets you, asks four quick questions, and builds the whole video: a sourced script, a voice, the map, captions timed word by word, and sound effects.
 
-**iconMap بلقن لكلود كود**: يسوي فيديوهات خرائط متحركة بالعربي. يرحّب فيك ويسألك 4 أسئلة سريعة (نوع الفيديو، فكرة من 5 يقترحها، طولي أو عرضي، الجمهور) وبعدها يسوي الفيديو كامل.
+**iconMap بلقن لكلود كود**: يسوي فيديوهات خرائط متحركة بالعربي. يرحّب فيك ويسألك 5 أسئلة سريعة (نوع الفيديو، فكرة من 5 يقترحها، طولي أو عرضي، الجمهور، الصوت) وبعدها يسوي الفيديو كامل.
 
 ## What it makes
 - **3D globe on real NASA satellite imagery** that dives from space to the place (vertical 1080x1920, 60 fps).
@@ -28,7 +28,7 @@ The Globe engine needs a GPU with WebGL. Without one, the flat engine works on t
 ## What is inside
 | skill | what it does |
 |---|---|
-| `iconMap` | greets you, asks the 4 questions in the chat, picks the engine, runs the others |
+| `iconMap` | greets you, asks the 5 questions in the chat, picks the engine, runs the others |
 | `iconMap-script` | 5 ideas, then a short script with every number checked against a primary source |
 | `iconMap-voice` | free Arabic voices, ElevenLabs, or your recording, with word timing |
 | `iconMap-globe` | the 3D globe engine on NASA imagery |

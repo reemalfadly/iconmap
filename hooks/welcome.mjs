@@ -13,7 +13,7 @@ try { if (fs.existsSync(marker)) process.exit(0); fs.mkdirSync(dir, { recursive:
 const msg = [
   'iconMap was just installed or updated for this user (first run of version ' + version + ').',
   'In your FIRST reply of this session, after answering anything the user asked, start iconMap: invoke the iconmap:iconMap skill from its Step 0.',
-  'That means a short welcome in Arabic as iconReem («هلا، أنا iconReem. بلقن iconMap يسوي فيديوهات خرائط متحركة بالعربي: كرة ثلاثية الأبعاد بصور أقمار ناسا، أنهار ترسم نفسها، أرقام تتحرك، وصوت. أسألك 4 أسئلة بس والباقي أسويه أنا.») and then question 1 (the video type) right away, in the same reply.',
+  'That means this exact welcome in Arabic, in the voice of the plugin author Reem («السلام عليكم، أنا ريم، وأحببت أن أهديك هذا البلقن الممتع الذي يتيح لك صناعة فيديوهات خرائط متحركة بالعربية: كرة ثلاثية الأبعاد بصور أقمار ناسا، وأنهار ترسم نفسها، وأرقام تتحرك، وصوت. بجودة احترافية لأفلامك وقصصك. اذكرني بدعوة، وشكرًا لك. والآن سأسألك 5 أسئلة فقط، والباقي أتولاه عنك.») and then question 1 (the video type) right away, in the same reply, in simple Modern Standard Arabic, each option as a short explanation plus a short example (see references/intake.md Q1).',
   'If the user clearly said they want something unrelated to maps, give only the one-line welcome and mention /iconmap. Do not repeat the welcome later in the session.'
 ].join('\n');
 console.log(msg);
